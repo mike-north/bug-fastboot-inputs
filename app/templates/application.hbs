@@ -1,3 +1,26 @@
-<h2 id="title">Welcome to Ember</h2>
+<p>
+  <div>A W3C input (disabled is not present in attrs)</div>
+  <input type="text" value='Hello Input!'>
+</p>
+
+<p>
+  <div>A W3C input (disabled is present in attrs)</div>
+  <input type="text" disabled value='Hello Input!'>
+</p>
+
+<p>
+  <div>An Ember input (disabled is not specified)</div>
+  {{input type="text" value='Hello Input!'}}
+</p>
+
+<p>
+  <div>An Ember input (disabled=true)</div>
+  {{input type="text" disabled=true value='Hello Input!'}}
+</p>
+
+<p>
+  <div>An Ember input (disabled=false)</div>
+  {{input type="text" disabled=false value='Hello Input!'}}
+</p>
 
 {{outlet}}
